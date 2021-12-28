@@ -3,19 +3,19 @@ import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 
 const items = [
-    {
-        title:'What is React?',
-        content:'React is a frontend javascript framework'
-    },
-    {
-        title:'Why use react?',
-        content:'React is a favorite JS library among engineers'
-    },
-    {
-        title:'How do you use React',
-        content:'You use react by creating components'
-    }
-]
+  {
+    title: "What is React?",
+    content: "React is a frontend javascript framework",
+  },
+  {
+    title: "Why use react?",
+    content: "React is a favorite JS library among engineers",
+  },
+  {
+    title: "How do you use React",
+    content: "You use react by creating components",
+  },
+];
 
 export default () => {
   return (
@@ -23,7 +23,7 @@ export default () => {
     //   <Accordion items={items} />
     // </div>
     <div>
-      <Search/>
+      <Search />
     </div>
   );
 };
