@@ -25,14 +25,23 @@ const Search = () => {
   }, [term]);
 
   const renderedResults = results.map((results) => {
-    return <div key={results.pageid} className="item">
-      <div className="content">
-        <div className="header">
-          {results.title}
+    return (
+      <div key={results.pageid} className="item">
+        <div className="right floated content">
+          <a
+            className="ui button"
+            href={`https://en.wikipedia.org?curid=${results.pageid}`}
+          >
+            Go
+          </a>
         </div>
-        {results.snippet}
+        <div className="content">
+          <div className="header">{results.title}</div>
+          <span dangerouslySetInnerHTML={{ __html: results.snippet }}></span>
+          {/* {results.snippet} */}
+        </div>
       </div>
-    </div>
+    );
   });
 
   return (
@@ -47,9 +56,7 @@ const Search = () => {
           />
         </div>
       </div>
-      <div className="ui celled list">
-        {renderedResults}
-      </div>
+      <div className="ui celled list">{renderedResults}</div>
     </div>
   );
 };
