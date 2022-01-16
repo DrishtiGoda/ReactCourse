@@ -1,0 +1,26 @@
+{
+  "streams": [
+    {
+      "title": "qwert",
+      "description": "qwert",
+      "id": 1
+    },
+    {
+      "title": "other stream",
+      "description": "other stream ",
+      "id": 2
+    },
+    {
+      "title": "I created this stream ",
+      "description": "This was made by me ",
+      "userId": "103203373872182804920",
+      "id": 3
+    },
+    {
+      "title": "Hello",
+      "description": "Hello",
+      "userId": "103203373872182804920",
+      "id": 4
+    }
+  ]
+}
